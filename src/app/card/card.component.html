@@ -1,0 +1,14 @@
+<ng-container *ngIf="dataArr">
+  <mat-card class="mb-10px" *ngFor="let dataItem of dataArr">
+    <mat-card-header>
+      <img mat-card-avatar *ngIf="dataItem.file" [src]="dataItem.file">
+      <mat-card-title>{{dataItem.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{dataItem.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+
